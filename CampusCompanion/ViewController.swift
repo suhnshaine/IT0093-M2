@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var getStartedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,5 +17,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func getStartedTap(_ sender: UIButton) {
+        sender.setTitle("Let's get started!", for: .normal)
+    }
 }
 
