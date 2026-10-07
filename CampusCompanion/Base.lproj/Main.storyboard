@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Campus Companion-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CampusCompanion" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WuZ-uO-qJq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WuZ-uO-qJq">
                                 <rect key="frame" x="76" y="334" width="240" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="31R-lK-VAx"/>
@@ -37,30 +37,28 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="pXR-ZP-h34"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2h-hB-u3y">
-                                <rect key="frame" x="140.66666666666666" y="508" width="112" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygb-S9-3ve">
+                                <rect key="frame" x="122.66666666666669" y="508" width="148" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Get Started"/>
-                                <connections>
-                                    <action selector="getStartedTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzM-nB-7WB"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="plain" title="Explore Campus"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="e2h-hB-u3y" firstAttribute="top" secondItem="WuZ-uO-qJq" secondAttribute="bottom" constant="24" id="1ZD-qR-s9R"/>
                             <constraint firstItem="kM8-3X-wEW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FHg-c2-2QP"/>
                             <constraint firstItem="33O-Sp-XXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L08-qD-krr"/>
+                            <constraint firstItem="WuZ-uO-qJq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QUx-9G-38I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="33O-Sp-XXK" secondAttribute="trailing" constant="20" id="RMw-Av-yC3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kM8-3X-wEW" secondAttribute="trailing" constant="20" id="RvL-I2-cWw"/>
+                            <constraint firstItem="ygb-S9-3ve" firstAttribute="top" secondItem="WuZ-uO-qJq" secondAttribute="bottom" constant="24" id="S6W-Rt-HOJ"/>
                             <constraint firstItem="WuZ-uO-qJq" firstAttribute="top" secondItem="kM8-3X-wEW" secondAttribute="bottom" constant="40" id="b3H-e2-l82"/>
+                            <constraint firstItem="ygb-S9-3ve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cA3-zN-2Hk"/>
                             <constraint firstItem="kM8-3X-wEW" firstAttribute="top" secondItem="33O-Sp-XXK" secondAttribute="bottom" constant="8" id="dAs-2z-AEb"/>
-                            <constraint firstItem="e2h-hB-u3y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmT-iS-ply"/>
                             <constraint firstItem="33O-Sp-XXK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="zvy-Sp-vFK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wbj-hi-G7F"/>
+                    <navigationItem key="navigationItem" title="Campus Companion" id="wbj-hi-G7F"/>
                     <connections>
                         <outlet property="titleLabel" destination="33O-Sp-XXK" id="eZ4-X5-tJN"/>
                     </connections>
@@ -68,6 +66,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692.36641221374043" y="136.61971830985917"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IX5-Ah-knp">
+            <objects>
+                <viewController id="wTw-4K-NLk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A6T-Cm-UDa" customClass="DetailViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NWD-DV-Vxh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAC-7Y-YIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="154"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fue-Yr-ued">
