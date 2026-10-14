@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Campus Companion"; ObjectID = "33O-Sp-XXK"; */
+"33O-Sp-XXK.text" = "Campus Companion";
+
+/* Class = "UILabel"; text = "Your Campus, In Your Pocket"; ObjectID = "kM8-3X-wEW"; */
+"kM8-3X-wEW.text" = "Your Campus, In Your Pocket";
+
+/* Class = "UILabel"; text = "Campus Events"; ObjectID = "wYL-B6-9Jc"; */
+"wYL-B6-9Jc.text" = "Campus Events";
+
+/* Class = "UINavigationItem"; title = "Campus Companion"; ObjectID = "wbj-hi-G7F"; */
+"wbj-hi-G7F.title" = "Campus Companion";
+
+/* Class = "UIButton"; configuration.title = "Explore Campus"; ObjectID = "ygb-S9-3ve"; */
+"ygb-S9-3ve.configuration.title" = "Explore Campus";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ygb-S9-3ve"; */
+"ygb-S9-3ve.normalTitle" = "Button";
