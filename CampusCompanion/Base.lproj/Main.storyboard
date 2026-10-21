@@ -37,15 +37,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="pXR-ZP-h34"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygb-S9-3ve">
-                                <rect key="frame" x="122.66666666666669" y="650" width="148" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Explore Campus"/>
-                                <connections>
-                                    <action selector="exploreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFy-5b-JKv"/>
-                                    <segue destination="6lU-sk-b51" kind="show" identifier="ShowDetailSegue" id="k1h-zV-4ud"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEB-6R-URB">
                                 <rect key="frame" x="32" y="508" width="329" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -67,14 +58,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygb-S9-3ve">
+                                <rect key="frame" x="122.66666666666669" y="694" width="148" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Explore Campus"/>
+                                <connections>
+                                    <action selector="exploreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFy-5b-JKv"/>
+                                    <segue destination="6lU-sk-b51" kind="show" identifier="ShowDetailSegue" id="k1h-zV-4ud"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rul-iR-PnM">
+                                <rect key="frame" x="0.0" y="642" width="393" height="36"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ygb-S9-3ve" firstAttribute="top" secondItem="LCg-gG-goc" secondAttribute="bottom" constant="24" id="5aJ-rg-Agp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KEB-6R-URB" secondAttribute="trailing" constant="32" id="76O-M4-7lQ"/>
                             <constraint firstItem="LCg-gG-goc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Cwv-tn-ont"/>
                             <constraint firstItem="kM8-3X-wEW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FHg-c2-2QP"/>
+                            <constraint firstItem="Rul-iR-PnM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fc0-lY-Wdt"/>
                             <constraint firstItem="nGk-th-gjU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="HfB-OU-Hy0"/>
                             <constraint firstItem="33O-Sp-XXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L08-qD-krr"/>
                             <constraint firstItem="grJ-Nw-CXx" firstAttribute="top" secondItem="KEB-6R-URB" secondAttribute="bottom" constant="16" id="Mmj-TX-rvb"/>
@@ -83,18 +86,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="33O-Sp-XXK" secondAttribute="trailing" constant="20" id="RMw-Av-yC3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kM8-3X-wEW" secondAttribute="trailing" constant="20" id="RvL-I2-cWw"/>
                             <constraint firstItem="nGk-th-gjU" firstAttribute="top" secondItem="KEB-6R-URB" secondAttribute="bottom" constant="16" id="TXT-Df-7QO"/>
+                            <constraint firstItem="ygb-S9-3ve" firstAttribute="top" secondItem="Rul-iR-PnM" secondAttribute="bottom" constant="16" id="aPk-iN-J4r"/>
                             <constraint firstItem="WuZ-uO-qJq" firstAttribute="top" secondItem="kM8-3X-wEW" secondAttribute="bottom" constant="40" id="b3H-e2-l82"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="grJ-Nw-CXx" secondAttribute="trailing" constant="32" id="bG2-2X-Zbi"/>
                             <constraint firstItem="ygb-S9-3ve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cA3-zN-2Hk"/>
                             <constraint firstItem="kM8-3X-wEW" firstAttribute="top" secondItem="33O-Sp-XXK" secondAttribute="bottom" constant="8" id="dAs-2z-AEb"/>
                             <constraint firstItem="KEB-6R-URB" firstAttribute="top" secondItem="WuZ-uO-qJq" secondAttribute="bottom" constant="24" id="ixy-0l-pOl"/>
                             <constraint firstItem="LCg-gG-goc" firstAttribute="top" secondItem="nGk-th-gjU" secondAttribute="bottom" constant="16" id="qsx-jJ-XBO"/>
+                            <constraint firstItem="Rul-iR-PnM" firstAttribute="top" secondItem="LCg-gG-goc" secondAttribute="bottom" constant="16" id="wMu-5T-bAl"/>
                             <constraint firstItem="KEB-6R-URB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="xY3-Zj-WeU"/>
                             <constraint firstItem="33O-Sp-XXK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="zvy-Sp-vFK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Campus Companion" id="wbj-hi-G7F"/>
                     <connections>
+                        <outlet property="eventDatePicker" destination="Rul-iR-PnM" id="0cg-gk-v8l"/>
                         <outlet property="nameTextField" destination="KEB-6R-URB" id="mEO-kJ-fg5"/>
                         <outlet property="notifySwitch" destination="grJ-Nw-CXx" id="MjI-6g-Ghq"/>
                         <outlet property="roleSegmentedControl" destination="LCg-gG-goc" id="Y4u-1H-FLc"/>
@@ -113,7 +119,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Events" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-Ek-gdP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Events" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-Ek-gdP">
                                 <rect key="frame" x="137.33333333333334" y="416" width="118.33333333333334" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

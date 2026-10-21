@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var eventDatePicker: UIDatePicker!
     
     @IBAction func exploreButtonTapped(_ sender: UIButton) {
         nameTextField.resignFirstResponder()
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
         destination.studentName = enteredName.isEmpty ? "Student" : enteredName; destination.notificationsEnabled = notifySwitch.isOn
     destination.selectedRole = roleSegmentedControl.selectedSegmentIndex == 0
     ? "Student" : "Faculty"
+        destination.preferredEventDate = eventDatePicker.date
     }
 
     

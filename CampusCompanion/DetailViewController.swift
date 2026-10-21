@@ -11,9 +11,14 @@ class DetailViewController: UIViewController {
     var studentName: String = ""
     var notificationsEnabled: Bool = false
     var selectedRole: String = ""
+    var preferredEventDate: Date = Date()
     override func viewDidLoad() { super.viewDidLoad()
     title = "Campus Events"
     let notificationStatus = notificationsEnabled ? "on" : "off"
-    messageLabel.text = "Welcome, \(studentName)! (\(selectedRole)) Notifications: \(notificationStatus)."
+    messageLabel.text = """
+        Welcome, \(studentName)! (\(selectedRole))
+        Notifications: \(notificationStatus)
+        Event Date: \(preferredEventDate).
+        """
     }
 }
