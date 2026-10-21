@@ -43,6 +43,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Explore Campus"/>
                                 <connections>
                                     <action selector="exploreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFy-5b-JKv"/>
+                                    <segue destination="6lU-sk-b51" kind="show" identifier="ShowDetailSegue" id="k1h-zV-4ud"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEB-6R-URB">
@@ -98,43 +99,42 @@
                         <outlet property="notifySwitch" destination="grJ-Nw-CXx" id="MjI-6g-Ghq"/>
                         <outlet property="roleSegmentedControl" destination="LCg-gG-goc" id="Y4u-1H-FLc"/>
                         <outlet property="titleLabel" destination="33O-Sp-XXK" id="eZ4-X5-tJN"/>
-                        <segue destination="wTw-4K-NLk" kind="show" identifier="ShowDetailSegue" id="PDA-S1-peJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692.36641221374043" y="136.61971830985917"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="IX5-Ah-knp">
+        <!--Detail View Controller-->
+        <scene sceneID="MiJ-Wy-ajk">
             <objects>
-                <viewController id="wTw-4K-NLk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A6T-Cm-UDa" customClass="DetailViewController">
+                <viewController id="6lU-sk-b51" customClass="DetailViewController" customModule="CampusCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NOJ-Tr-N2S">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYL-B6-9Jc">
-                                <rect key="frame" x="137" y="415.66666666666669" width="119" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Events" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-Ek-gdP">
+                                <rect key="frame" x="137.33333333333334" y="416" width="118.33333333333334" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="NWD-DV-Vxh"/>
+                        <viewLayoutGuide key="safeArea" id="zkV-iy-19x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wYL-B6-9Jc" firstAttribute="centerY" secondItem="A6T-Cm-UDa" secondAttribute="centerY" id="RIo-Sb-rWa"/>
-                            <constraint firstItem="wYL-B6-9Jc" firstAttribute="centerX" secondItem="A6T-Cm-UDa" secondAttribute="centerX" id="VUU-ZV-sNH"/>
+                            <constraint firstItem="ry1-Ek-gdP" firstAttribute="centerY" secondItem="NOJ-Tr-N2S" secondAttribute="centerY" id="Qol-m4-7mG"/>
+                            <constraint firstItem="ry1-Ek-gdP" firstAttribute="centerX" secondItem="NOJ-Tr-N2S" secondAttribute="centerX" id="ovu-zE-YEQ"/>
                         </constraints>
-                        <connections>
-                            <outlet property="messageLabel" destination="wYL-B6-9Jc" id="zOl-Wb-vJr"/>
-                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="upp-XV-gnN"/>
+                    <navigationItem key="navigationItem" id="kMq-Ej-JCx"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="ry1-Ek-gdP" id="NUw-3q-eWg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dAC-7Y-YIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3h-3u-ZXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1509" y="154"/>
+            <point key="canvasLocation" x="1543" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fue-Yr-ued">
